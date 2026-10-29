@@ -1,0 +1,4 @@
+interface:
+  display_name: "Bpfman: bumps en Fedora"
+  short_description: "Parche, vendor, Mock y revisión de PR de bpfman"
+  default_prompt: "Usa $bpfman-fedora-bump para revisar este bug de bpfman y preparar el bump en Fedora siguiendo nuestra guía."
