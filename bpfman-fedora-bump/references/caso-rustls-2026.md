@@ -48,6 +48,8 @@ El [job de Testing Farm](https://artifacts.dev.testing-farm.io/722aee5b-d2cf-4f1
 
 La dirección de Franklin Street también se considera obsoleta en rpmlint 2.8.0. La [copia oficial de GPLv2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt) usa enlaces. Se preparó un parche separado para que el archivo coincidiera byte por byte con esa copia. Esta comprobación es distinta de compilar y ejecutar los tests del programa; no hay que ocultar el error con un filtro ni regenerar vendor para cambiar este archivo de licencia de bpfman.
 
+La corrección se publicó como `69e3950` en el mismo PR #8: `0008-update-GPLv2-license-text.patch`, declarado como Patch7. Con rpmlint 2.8.0 y la configuración de Packit, el RPM x86_64 anterior reprodujo un error; el RPM corregido y el spec dieron 0 errores y 7 advertencias. La compilación y los 10 tests pasaron. Esto acredita la validación local, no el resultado de una ejecución posterior de Testing Farm.
+
 ## Bugs descartados durante la revisión
 
 - [Bug 2560764 / CVE-2026-81856](https://bugzilla.redhat.com/show_bug.cgi?id=2560764): el [advisory](https://github.com/hexpm/hex/security/advisories/GHSA-fpmj-3cxg-p766) afectaba al gestor Hex de Elixir/Erlang, no al crate Rust hex 0.4.3. Se propuso NOTABUG por diferencia de componente, sin afirmar confirmación oficial de Red Hat.
